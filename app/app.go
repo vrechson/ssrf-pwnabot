@@ -91,7 +91,7 @@ func (SSRFPwnaBot *SSRFPwnaBot) handleCommand(update *tgbotapi.Update) {
 
 	// Showing help menu
 	case commands.Help:
-		msg := tgbotapi.NewMessage(update.Message.Chat.ID, "use /random to return a random image from a website, example:\n/random https://illuminat-us.tumblr.com/")
+		msg := tgbotapi.NewMessage(update.Message.Chat.ID, "use /random to return a random image from a website, example:\n/random https://world-of-cats.tumblr.com/")
 		SSRFPwnaBot.bot.Send(msg)
 
 	case commands.Random:
